@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "safetest": "cross-env OPT_URL=${OPT_URL:-http://localhost:3000/vite-react-ts/} vitest --config vite.safetest.config"
+    "test": "cross-env OPT_URL=${OPT_URL:-http://localhost:3000/vite-react-ts/} vitest --config vite.safetest.config.mjs"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,7 @@
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "cross-env": "^7.0.3",
     "safetest": "^0.1.13",
     "typescript": "^5.4.5",
     "vite": "^5.2.10",
