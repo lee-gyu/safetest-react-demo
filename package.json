@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "test": "cross-env OPT_URL=${OPT_URL:-http://localhost:3000/vite-react-ts/} vitest --config vite.safetest.config.mjs"
+    "test": "cross-env OPT_URL=${OPT_URL:-http://localhost:3000/vite-react-ts/} vitest --config vite.safetest.config.mjs",
+    "test:e2e": "playwright test --ui"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,8 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.43.1",
+    "@types/node": "^20.12.7",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.2.1",
